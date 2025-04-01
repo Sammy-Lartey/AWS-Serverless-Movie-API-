@@ -88,7 +88,7 @@ GET https://your-api-gateway-url/movies
 **Request**:
 
 ```http
-DELETE https://your-api-gateway-url/movies/Spirited%20Away
+DELETE https://your-api-gateway-url/movies/Spirited Away
 ```
 
 **Response**:
