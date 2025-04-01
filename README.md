@@ -43,7 +43,10 @@ Here’s how you can interact with the API using **Postman**:
 ```http
 POST https://your-api-gateway-url/movies
 Content-Type: application/json
+```
+**Body**:
 
+```http
 {
     "Title": "Spirited Away",
     "director": "Hayao Miyazaki",
@@ -52,5 +55,30 @@ Content-Type: application/json
 }
 ```
 
-**Body**:
+**Response**:
 
+```http
+{
+    "message": "Movie added successfully"
+}
+
+```
+
+### 2. GET Request (Retrieve All Movies)
+
+**Request**:
+
+```http
+POST https://your-api-gateway-url/movies
+```
+
+**Response**:
+
+```http
+{
+    "Title": "Spirited Away",
+    "director": "Hayao Miyazaki",
+    "year": "2001",
+    "rating": "8.6"
+}
+```
