@@ -69,7 +69,7 @@ Content-Type: application/json
 **Request**:
 
 ```http
-POST https://your-api-gateway-url/movies
+GET https://your-api-gateway-url/movies
 ```
 
 **Response**:
@@ -82,3 +82,46 @@ POST https://your-api-gateway-url/movies
     "rating": "8.6"
 }
 ```
+
+### 3. DELETE Request (Remove a Movie)
+
+**Request**:
+
+```http
+DELETE https://your-api-gateway-url/movies/Spirited%20Away
+```
+
+**Response**:
+
+```http
+{
+    "message": "'Spirited Away' removed successfully"
+}
+
+```
+
+## Wrapping It Up
+
+This project was a great way to dive into building and deploying serverless APIs with AWS. I got to work with a variety of AWS services like IAM, Lambda, API Gateway, DynamoDB, and CloudWatch.
+
+Building this API helped me understand how to:
+
+- Develop APIs in the cloud.
+- Use AWS services to create a smooth and efficient serverless architecture.
+- Monitor and troubleshoot APIs.
+
+This was a fun learning experience, and I’m excited to explore even more AWS features in the future!
+
+## Steps to Run the Project:
+
+### Set up AWS Services:
+
+1. Create a DynamoDB table called Movies with Title as the primary key.
+2. Create a Lambda function for handling the API logic and give it the right permissions.
+3. Set up API Gateway to expose the Lambda function as an API.
+4. Turn on CloudWatch to track API activity and errors.
+
+### Postman Requests:
+
+1. Import the Postman collection with the requests I showed above.
+2. Replace the API Gateway URL in your Postman with the actual one from your API.
